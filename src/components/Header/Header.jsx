@@ -5,10 +5,10 @@ export default function Header () {
         <header>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Education</li>
-                    <li>Experience</li>
-                    <li>Contact</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>

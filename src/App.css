@@ -1,1 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
+}
+
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
