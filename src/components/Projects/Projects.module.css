@@ -1,0 +1,32 @@
+.gridContainer {
+    display: grid;
+    margin: 100px 0;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    background-color: black;
+    column-gap: 20px;
+    row-gap: 50px;
+
+}
+
+.gridContainer > div {
+    width: 200px;
+    height: 200px;
+    border: 2px violet solid;
+}
+
+.firstProject {
+
+}
+
+.secondProject {
+
+}
+
+.thirdProject {
+
+}
+
+.fourthProject {
+
+}
