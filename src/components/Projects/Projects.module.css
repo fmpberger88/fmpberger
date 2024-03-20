@@ -42,8 +42,13 @@ a {
 }
 
 .secondDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     grid-column: 2 / 3;
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
 }
 
 
@@ -53,8 +58,13 @@ a {
 }
 
 .thirdDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     grid-column: 3 / 4;
-    grid-row: 13 / 14;
+    grid-row: 12 / 13;
 }
 
 
@@ -64,8 +74,13 @@ a {
 }
 
 .fourthDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     grid-column: 2 / 3;
-    grid-row: 18 / 19;
+    grid-row: 17 / 18;
 }
 
 .img {
@@ -85,10 +100,31 @@ a {
 @media (max-width: 480px) {
     .gridContainer {
         grid-template-columns: 1fr; /* 1 Spalte für kleine Bildschirme */
+        grid-template-rows: 1fr;
     }
     .firstProject, .secondProject, .thirdProject, .fourthProject {
         grid-column: 1; /* Alle Projekte nehmen die einzige Spalte ein */
         grid-row: span; /* Setzt die Zeilenspanne zurück auf Standard */
+    }
+
+    .firstDescription, .secondDescription, .thirdDescription, .fourthDescription {
+        grid-column: 1;
+    }
+
+    .firstDescription {
+        grid-row: 5 / 6;
+    }
+
+    .secondDescription {
+        grid-row: 10 / 11;
+    }
+
+    .thirdDescription {
+        grid-row: 15 / 16;
+    }
+
+    .fourthDescription {
+        grid-row: 20 / 21;
     }
 }
 
