@@ -2,7 +2,7 @@ import styles from './Projects.module.css';
 import el from '../../assets/images/el-info - Ergänzungsleistungen.webp';
 import nikita from '../../assets/images/nikita.webp';
 import trix from '../../assets/images/Trix Berger - Zentralschweizerische Kunstschaffende in Malerei, Keramik, Stoffe.webp';
-import camera from '../../assets/images/format_camera.webp';
+import typeviewer from '../../assets/images/typ_viewer.webp';
 import {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,7 +11,7 @@ export default function Projects() {
     useEffect(() => {
         AOS.init({
             // hier kannst du globale Einstellungen für AOS setzen
-            duration : 3000 // Dauer der Animationen in Millisekunden
+            duration : 2000 // Dauer der Animationen in Millisekunden
         });
     }, []);
 
@@ -21,29 +21,29 @@ export default function Projects() {
                 <img className={styles.img} src={el}/>
             </div>
             <div className={styles.firstDescription}>
-                <a href="#">Source Code</a>
-                <a href="#">Live Page</a>
+                <a href="https://github.com/fmpberger88/eli-project" target="_blank">Source Code</a>
+                <a href="https://www.el-info.ch/" target="_blank">Live Page</a>
             </div>
             <div className={styles.secondDescription}>
-                <a href="#">Source Code</a>
-                <a href="#">Live Page</a>
+                <a href="https://github.com/fmpberger88/nikita" target="_blank">Source Code</a>
+                <a href="https://www.nikita-art.ch/" target="_blank">Live Page</a>
             </div>
             <div className={styles.secondProject} data-aos="fade-left">
                 <img className={styles.img} src={nikita}/>
             </div>
             <div className={styles.thirdDescription}>
-                <a href="#">Source Code</a>
-                <a href="#">Live Page</a>
+                <a href="https://github.com/fmpberger88/trixberger" target="_blank">Source Code</a>
+                <a href="https://www.art-by-trix.com/index.html" target="_blank">Live Page</a>
             </div>
             <div className={styles.thirdProject} data-aos="fade-right">
                 <img className={styles.img} src={trix}/>
             </div>
             <div className={styles.fourthDescription}>
-                <a href="#">Source Code</a>
-                <a href="#">Live Page</a>
+                <a href="https://github.com/fmpberger88/font-viewer" target="_blank">Source Code</a>
+                <a href="https://font-viewer.onrender.com/" target="_blank">Live Page</a>
             </div>
             <div className={styles.fourthProject} data-aos="fade-left">
-                <img className={styles.img} src={camera}/>
+                <img className={styles.img} src={typeviewer}/>
             </div>
         </div>
     );
