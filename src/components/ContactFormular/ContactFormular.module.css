@@ -15,7 +15,7 @@ form {
 }
 
 form input {
-    width: 30%;
+    width: 50%;
     text-indent: 10px;
     background-color: lightskyblue;
     border: 2px black solid;
@@ -26,7 +26,7 @@ form input {
 }
 
 form textarea {
-    width: 40%;
+    width: 50%;
     text-indent: 10px;
     background-color: lightskyblue;
     border: 2px black solid;

@@ -18,7 +18,7 @@ main div h1, p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("src/assets/images/space.webp");
+    background-image: url("assets/space.webp");
     background-size: cover;
 }
 
