@@ -1,0 +1,71 @@
+.sectionTitle {
+    color: violet;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+form input {
+    width: 30%;
+    text-indent: 10px;
+    background-color: lightskyblue;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.125rem;
+    height: 40px;
+}
+
+form textarea {
+    width: 40%;
+    text-indent: 10px;
+    background-color: lightskyblue;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.125rem;
+    height: 200px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: blueviolet;
+    opacity: 0.5; /* Firefox */
+}
+
+form button {
+    background-color: lightskyblue;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.125rem;
+    width: 150px;
+    height: 40px;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+    form input {
+        width: 80%;
+    }
+
+    form textarea {
+        width: 80%;
+    }
+
+    form button {
+        width: 25%;
+    }
+}

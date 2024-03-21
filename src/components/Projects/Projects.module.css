@@ -1,15 +1,13 @@
-a {
-    text-decoration: none;
-    padding: 10px;
-    border: 1px violet solid;
-    border-radius: 20px;
-    width: 180px;
+.sectionTitle {
+    color: violet;
+    font-weight: bold;
+    font-size: 3rem;
     text-align: center;
+    margin: 50px 0;
 }
 
 .gridContainer {
     display: grid;
-    margin: 100px 0;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(20, 1fr);
     background-color: black;
@@ -19,6 +17,15 @@ a {
 }
 
 .gridContainer > div {
+}
+
+.gridContainer a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px violet solid;
+    border-radius: 20px;
+    width: 180px;
+    text-align: center;
 }
 
 .firstProject {
