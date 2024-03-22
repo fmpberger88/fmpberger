@@ -20,7 +20,7 @@ export default function Projects() {
             <h2 className={styles.sectionTitle} id="projects">Projects</h2>
             <div className={styles.gridContainer}>
                 <div className={styles.firstProject} data-aos="fade-right">
-                    <img className={styles.img} src={el}/>
+                    <img className={styles.img} src={el} alt="first project el-info"/>
                 </div>
                 <div className={styles.firstDescription}>
                     <a href="https://github.com/fmpberger88/eli-project" target="_blank">Source Code</a>
@@ -31,21 +31,21 @@ export default function Projects() {
                     <a href="https://www.nikita-art.ch/" target="_blank">Live Page</a>
                 </div>
                 <div className={styles.secondProject} data-aos="fade-left">
-                    <img className={styles.img} src={nikita}/>
+                    <img className={styles.img} src={nikita} alt="second project nikita artist"/>
                 </div>
                 <div className={styles.thirdDescription}>
                     <a href="https://github.com/fmpberger88/trixberger" target="_blank">Source Code</a>
                     <a href="https://www.art-by-trix.com/index.html" target="_blank">Live Page</a>
                 </div>
                 <div className={styles.thirdProject} data-aos="fade-right">
-                    <img className={styles.img} src={trix}/>
+                    <img className={styles.img} src={trix} alt="third project trix berger artist"/>
                 </div>
                 <div className={styles.fourthDescription}>
                     <a href="https://github.com/fmpberger88/font-viewer" target="_blank">Source Code</a>
                     <a href="https://font-viewer.onrender.com/" target="_blank">Live Page</a>
                 </div>
                 <div className={styles.fourthProject} data-aos="fade-left">
-                    <img className={styles.img} src={typeviewer}/>
+                    <img className={styles.img} src={typeviewer} alt="fourth project font viewer"/>
                 </div>
             </div>
         </section>
