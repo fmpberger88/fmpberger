@@ -24,3 +24,7 @@
     background-color: black;
     border: 1px white dotted;
 }
+
+.box:hover {
+    transform: scale(1.1);
+}
