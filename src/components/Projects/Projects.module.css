@@ -9,7 +9,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     background-color: black;
     column-gap: 20px;
     row-gap: 50px;
@@ -30,7 +30,7 @@
 
 .firstProject {
     grid-column: 1 / 3;
-    grid-row: 2 / 5;
+    grid-row: 1;
 }
 
 .firstDescription {
@@ -39,13 +39,13 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    grid-column: 3 /4;
-    grid-row: 2 / 3;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .secondProject {
     grid-column: 3 / 5;
-    grid-row: 7 / 10;
+    grid-row: 2;
 }
 
 .secondDescription {
@@ -54,14 +54,14 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    grid-column: 2 / 3;
-    grid-row: 7 / 8;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 
 .thirdProject {
     grid-column: 1 / 3;
-    grid-row: 12 / 15;
+    grid-row: 3;
 }
 
 .thirdDescription {
@@ -70,14 +70,14 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    grid-column: 3 / 4;
-    grid-row: 12 / 13;
+    grid-column: 3;
+    grid-row: 3;
 }
 
 
 .fourthProject {
     grid-column: 3 / 5;
-    grid-row: 17 / 20;
+    grid-row: 4;
 }
 
 .fourthDescription {
@@ -87,8 +87,40 @@
     justify-content: center;
     gap: 20px;
     grid-column: 2 / 3;
-    grid-row: 17 / 18;
+    grid-row: 4;
 }
+
+.fifthProject {
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+.fifthDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 3 / 4;
+    grid-row: 5;
+
+}
+
+.sixthProject {
+    grid-column: 3 / 5;
+    grid-row: 6;
+}
+
+.sixthDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 2 / 3;
+    grid-row: 6;
+}
+
 
 .img {
     width: 100%;
@@ -96,42 +128,15 @@
 
 @media (max-width: 768px) {
     .gridContainer {
-        grid-template-columns: repeat(2, 1fr); /* 2 Spalten für mittelgroße Bildschirme */
-    }
-    .firstProject, .secondProject, .thirdProject, .fourthProject {
-        grid-column: 1/3; /* Alle Projekte nehmen die einzige Spalte ein */
-        grid-row: span; /* Setzt die Zeilenspanne zurück auf Standard */
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
     .gridContainer {
-        grid-template-columns: 1fr; /* 1 Spalte für kleine Bildschirme */
-        grid-template-rows: 1fr;
-    }
-    .firstProject, .secondProject, .thirdProject, .fourthProject {
-        grid-column: 1; /* Alle Projekte nehmen die einzige Spalte ein */
-        grid-row: span; /* Setzt die Zeilenspanne zurück auf Standard */
-    }
-
-    .firstDescription, .secondDescription, .thirdDescription, .fourthDescription {
-        grid-column: 1;
-    }
-
-    .firstDescription {
-        grid-row: 5 / 6;
-    }
-
-    .secondDescription {
-        grid-row: 10 / 11;
-    }
-
-    .thirdDescription {
-        grid-row: 15 / 16;
-    }
-
-    .fourthDescription {
-        grid-row: 20 / 21;
+        display: flex;
+        flex-direction: column;
     }
 }
 
