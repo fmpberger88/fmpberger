@@ -1,4 +1,4 @@
-import bfImage from '../../assets/images/bf.webp';
+import bfImage from '../../assets/images/fmpberger.webp';
 import styles from './About.module.css'
 
 export default function About () {
