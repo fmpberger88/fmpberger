@@ -1,7 +1,7 @@
 import styles from './Projects.module.css';
-import elImage from '../../assets/images/el-info - Ergänzungsleistungen.webp';
+import elImage from '../../assets/images/el-info.webp';
 import nikitaImage from '../../assets/images/nikita.webp';
-import trixImage from '../../assets/images/Trix Berger - Zentralschweizerische Kunstschaffende in Malerei, Keramik, Stoffe.webp';
+import trixImage from '../../assets/images/trix.webp';
 import typeviewerImage from '../../assets/images/typ_viewer.webp';
 import calculator from '../../assets/images/calculaor.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
