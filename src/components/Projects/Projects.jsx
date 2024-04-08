@@ -5,6 +5,8 @@ import trixImage from '../../assets/images/trix.webp';
 import typeviewerImage from '../../assets/images/typ_viewer.webp';
 import calculator from '../../assets/images/calculaor.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
+import landingPage from '../../assets/images/layout_example.webp';
+import signup from '../../assets/images/signup-form.webp';
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -50,6 +52,12 @@ export default function Projects() {
 
                 <ProjectImage imgSrc={rockPaperScissors} altText="project rock-paper-scissors" aosDirection="fade-left" className="sixthProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/rock-scissors-paper" livePageUrl="https://rock-scissors-paper-odin.onrender.com/" className="sixthDescription" />
+
+                <ProjectImage imgSrc={landingPage} altText="project landing" aosDirection="fade-right" className="seventhProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/landing-page-layout-example" livePageUrl="https://landing-page-layout-example.onrender.com/" className="seventhDescription" />
+
+                <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="eightProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="eigthDescription" />
             </div>
         </section>
     );
