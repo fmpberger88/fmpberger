@@ -7,6 +7,7 @@ import calculator from '../../assets/images/calculaor.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
 import landingPage from '../../assets/images/layout_example.webp';
 import signup from '../../assets/images/signup-form.webp';
+import library from '../../assets/images/Library.webp';
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -58,6 +59,9 @@ export default function Projects() {
 
                 <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="eightProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="eigthDescription" />
+
+                <ProjectImage imgSrc={library} altText="project signup-form" aosDirection="fade-right" className="ninthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/library-odin" livePageUrl="https://library-odin.onrender.com/" className="ninthDescription" />
             </div>
         </section>
     );

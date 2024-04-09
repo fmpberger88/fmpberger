@@ -151,6 +151,21 @@
     grid-row: 8;
 }
 
+.ninthProject {
+    grid-column: 1 / 3;
+    grid-row: 9;
+}
+
+.ninthDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 3 /4;
+    grid-row: 9;
+}
+
 
 .img {
     width: 100%;
