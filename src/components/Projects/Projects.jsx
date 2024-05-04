@@ -8,6 +8,8 @@ import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
 import landingPage from '../../assets/images/layout_example.webp';
 import signup from '../../assets/images/signup-form.webp';
 import library from '../../assets/images/Library.webp';
+import weather from '../../assets/images/weather.webp';
+import yelp from '../../assets/images/yelp.webp';
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -39,29 +41,35 @@ export default function Projects() {
                 <ProjectImage imgSrc={elImage} altText="project el-info" aosDirection="fade-right" className="firstProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/eli-project" livePageUrl="https://www.el-info.ch/" className="firstDescription" />
 
-                <ProjectImage imgSrc={nikitaImage} altText="project nikita artist" aosDirection="fade-left" className="secondProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/nikita" livePageUrl="https://www.nikita-art.ch/" className="secondDescription" />
+                <ProjectImage imgSrc={yelp} altText="food" aosDirection="fade-left" className="secondProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/restaurant-finder" livePageUrl="https://yelp-api-example.onrender.com/" className="secondDescription" />
 
-                <ProjectImage imgSrc={trixImage} altText="project trix berger artist" aosDirection="fade-right" className="thirdProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/trixberger" livePageUrl="https://www.art-by-trix.com/index.html" className="thirdDescription" />
+                <ProjectImage imgSrc={weather} altText="weather-dahhboard" aosDirection="fade-right" className="thirdProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/weatherAPI" livePageUrl="https://weatherapi-kl20.onrender.com/" className="thirdDescription" />
 
-                <ProjectImage imgSrc={typeviewerImage} altText="project font viewer" aosDirection="fade-left" className="fourthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/font-viewer" livePageUrl="https://font-viewer.onrender.com/" className="fourthDescription" />
+                <ProjectImage imgSrc={nikitaImage} altText="project nikita artist" aosDirection="fade-left" className="fourthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/nikita" livePageUrl="https://www.nikita-art.ch/" className="fourthDescription" />
 
-                <ProjectImage imgSrc={calculator} altText="project calculator" aosDirection="fade-right" className="fifthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/calculator" livePageUrl="https://calculator-3pfo.onrender.com/" className="fifthDescription" />
+                <ProjectImage imgSrc={trixImage} altText="project trix berger artist" aosDirection="fade-right" className="fifthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/trixberger" livePageUrl="https://www.art-by-trix.com/index.html" className="fifthDescription" />
 
-                <ProjectImage imgSrc={rockPaperScissors} altText="project rock-paper-scissors" aosDirection="fade-left" className="sixthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/rock-scissors-paper" livePageUrl="https://rock-scissors-paper-odin.onrender.com/" className="sixthDescription" />
+                <ProjectImage imgSrc={typeviewerImage} altText="project font viewer" aosDirection="fade-left" className="sixthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/font-viewer" livePageUrl="https://font-viewer.onrender.com/" className="sixthDescription" />
 
-                <ProjectImage imgSrc={landingPage} altText="project landing" aosDirection="fade-right" className="seventhProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/landing-page-layout-example" livePageUrl="https://landing-page-layout-example.onrender.com/" className="seventhDescription" />
+                <ProjectImage imgSrc={calculator} altText="project calculator" aosDirection="fade-right" className="seventhProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/calculator" livePageUrl="https://calculator-3pfo.onrender.com/" className="seventhDescription" />
 
-                <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="eightProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="eigthDescription" />
+                <ProjectImage imgSrc={rockPaperScissors} altText="project rock-paper-scissors" aosDirection="fade-left" className="eightProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/rock-scissors-paper" livePageUrl="https://rock-scissors-paper-odin.onrender.com/" className="eigthDescription" />
 
-                <ProjectImage imgSrc={library} altText="project signup-form" aosDirection="fade-right" className="ninthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/library-odin" livePageUrl="https://library-odin.onrender.com/" className="ninthDescription" />
+                <ProjectImage imgSrc={landingPage} altText="project landing" aosDirection="fade-right" className="ninthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/landing-page-layout-example" livePageUrl="https://landing-page-layout-example.onrender.com/" className="ninthDescription" />
+
+                <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="tenthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="tenthDescription" />
+
+                <ProjectImage imgSrc={library} altText="project signup-form" aosDirection="fade-right" className="eleventhProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/library-odin" livePageUrl="https://library-odin.onrender.com/" className="eleventhDescription" />
             </div>
         </section>
     );
