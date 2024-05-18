@@ -10,6 +10,7 @@ import signup from '../../assets/images/signup-form.webp';
 import library from '../../assets/images/Library.webp';
 import weather from '../../assets/images/weather.webp';
 import yelp from '../../assets/images/yelp.webp';
+import battleShip from '../../assets/images/BattleShip.webp';
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -62,8 +63,8 @@ export default function Projects() {
                 <ProjectImage imgSrc={rockPaperScissors} altText="project rock-paper-scissors" aosDirection="fade-left" className="eightProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/rock-scissors-paper" livePageUrl="https://rock-scissors-paper-odin.onrender.com/" className="eigthDescription" />
 
-                <ProjectImage imgSrc={landingPage} altText="project landing" aosDirection="fade-right" className="ninthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/landing-page-layout-example" livePageUrl="https://landing-page-layout-example.onrender.com/" className="ninthDescription" />
+                <ProjectImage imgSrc={battleShip} altText="project battleShip" aosDirection="fade-right" className="ninthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/battleship-vanilla" livePageUrl="https://battleship-vanilla.onrender.com/" className="ninthDescription" />
 
                 <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="tenthProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="tenthDescription" />
