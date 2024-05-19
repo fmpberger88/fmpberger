@@ -5,8 +5,7 @@ import trixImage from '../../assets/images/trix.webp';
 import typeviewerImage from '../../assets/images/typ_viewer.webp';
 import calculator from '../../assets/images/calculaor.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
-import landingPage from '../../assets/images/layout_example.webp';
-import signup from '../../assets/images/signup-form.webp';
+import memoryCard from '../../assets/images/memorygame.webp';
 import library from '../../assets/images/Library.webp';
 import weather from '../../assets/images/weather.webp';
 import yelp from '../../assets/images/yelp.webp';
@@ -66,8 +65,8 @@ export default function Projects() {
                 <ProjectImage imgSrc={battleShip} altText="project battleShip" aosDirection="fade-right" className="ninthProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/battleship-vanilla" livePageUrl="https://battleship-vanilla.onrender.com/" className="ninthDescription" />
 
-                <ProjectImage imgSrc={signup} altText="project signup-form" aosDirection="fade-left" className="tenthProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/odin-signup-form" livePageUrl="https://odin-signup-form-tsh8.onrender.com/" className="tenthDescription" />
+                <ProjectImage imgSrc={memoryCard} altText="project memorycards" aosDirection="fade-left" className="tenthProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/memory-card-game" livePageUrl="https://memory-card-game-85of.onrender.com/" className="tenthDescription" />
 
                 <ProjectImage imgSrc={library} altText="project signup-form" aosDirection="fade-right" className="eleventhProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/library-odin" livePageUrl="https://library-odin.onrender.com/" className="eleventhDescription" />
