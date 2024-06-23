@@ -6,7 +6,7 @@ export default function Header () {
         <header>
             <nav>
                 <ul>
-                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink className={styles.NavLink} to="/blog">Blog</NavLink>
                     <li><a href="#tools">Tools</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>

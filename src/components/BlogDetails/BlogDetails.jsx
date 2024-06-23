@@ -6,6 +6,7 @@ import styles from './BlogDetails.module.css';
 import defaultImage from "../../assets/images/default_image.webp";
 import Loading from "../Loading/Loading.jsx";
 import ErrorMessage from "../ErrorMessage/ErrorMessage.jsx";
+import AddComment from "../AddComment/AddComment.jsx";
 
 const BlogDetails = () => {
     const { blogId } = useParams();
@@ -35,6 +36,7 @@ const BlogDetails = () => {
             <p className={styles.blogViews}>Views: {data.views}</p>
             <p className={styles.blogCreatedAt}>Published on: {new Date(data.createdAt).toLocaleDateString()}</p>
             <h3 className={styles.blogComments}>Comments</h3>
+            <AddComment />
             {data.comments.map((comment) => (
                 <div key={comment._id} className={styles.comment}>
                     <p className={styles.commentText}>{comment.text}</p>
