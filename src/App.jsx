@@ -1,21 +1,12 @@
 import './App.css'
-import Header from "./components/Header/Header.jsx";
-import About from "./components/About/About.jsx";
-import Tools from "./components/Tools/Tools.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import ContactFormular from "./components/ContactFormular/ContactFormular.jsx";
+import { RouterProvider } from "react-router-dom";
+import routes from './routes.jsx';
 
 function App() {
 
   return (
     <div>
-        <Header />
-        <About />
-        <Tools />
-        <Projects />
-        <ContactFormular />
-        <Footer />
+        <RouterProvider router={routes}></RouterProvider>
     </div>
   )
 }
