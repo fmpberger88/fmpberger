@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import styles from './Blogs.module.css';
 import Loading from "../Loading/Loading.jsx";
 import ErrorMessage from "../ErrorMessage/ErrorMessage.jsx";
+import defaultImage from "../../assets/images/default_image.webp";
 
 const Blogs = () => {
     const { data, error, isLoading } = useQuery({
@@ -21,16 +22,20 @@ const Blogs = () => {
     }
 
     return (
-        <div className={styles.blogsContainer}>
+        <main>
             <h1 className={styles.blogTitle}>fmpberger's Blogs</h1>
-            {data.map(blog => (
-                <div key={blog._id} className={styles.blogItem}>
-                    <Link to={`/blog/${blog._id}`} className={styles.blogLink}>{blog.title}</Link>
-                    <p className={styles.blogContent}>{blog.content.substring(0, 100)}...</p>
-                </div>
-            ))}
+            <div className={styles.blogsContainer}>
+                {data.map(blog => (
+                    <div key={blog._id} className={styles.blogsCard}>
+                        <h2 className={styles.blogsTitle}><Link to={`/blog/${blog._id}`}>{blog.title}</Link></h2>
+                        {blog.image ? <img src={blog.image} alt={blog.alt} className={styles.blogsImage}/> :
+                            <img src={defaultImage} alt="default Image" className={styles.blogsImage}/>}
+                    </div>
+                ))}
+
+            </div>
             <Link to="/" className={styles.goBackLink}>Go back</Link>
-        </div>
+        </main>
     );
 }
 

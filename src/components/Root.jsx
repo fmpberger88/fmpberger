@@ -9,7 +9,7 @@ import ContactFormular from "./ContactFormular/ContactFormular.jsx";
 function Root() {
 
     return (
-        <div>
+        <div className="App">
             <Header />
             <About />
             <Tools />
