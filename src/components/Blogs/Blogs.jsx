@@ -6,13 +6,6 @@ import styles from './Blogs.module.css';
 import Loading from "../Loading/Loading.jsx";
 import ErrorMessage from "../ErrorMessage/ErrorMessage.jsx";
 
-const truncateText = (text, maxLength) => {
-    if (text.length <= maxLength) {
-        return text;
-    }
-    return text.substr(0, maxLength) + '...';
-};
-
 const Blogs = () => {
     const { data, error, isLoading } = useQuery({
         queryKey: ['blogs'],
@@ -33,7 +26,7 @@ const Blogs = () => {
             {data.map(blog => (
                 <div key={blog._id} className={styles.blogItem}>
                     <Link to={`/blog/${blog._id}`} className={styles.blogLink}>{blog.title}</Link>
-                    <p className={styles.blogContent}>{truncateText(blog.content, 100)}</p>
+                    <p className={styles.blogContent}>{blog.content.substring(0, 100)}...</p>
                 </div>
             ))}
             <Link to="/" className={styles.goBackLink}>Go back</Link>
