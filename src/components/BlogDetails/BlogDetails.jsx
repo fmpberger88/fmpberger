@@ -1,4 +1,5 @@
 // src/components/BlogDetail/BlogDetail.jsx
+import DOMPurify from "dompurify";
 import { fetchBlogById } from "../../api";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
@@ -23,6 +24,9 @@ const BlogDetails = () => {
         return <ErrorMessage message={error.message} />
     }
 
+    // Clean html-content
+    const cleanContent = DOMPurify.sanitize(data.content);
+
     return (
         <div className={styles.blogDetailsContainer}>
             <h1 className={styles.blogTitle}>{data.title}</h1>
@@ -32,7 +36,10 @@ const BlogDetails = () => {
                 <img src={defaultImage} alt="default" className={styles.blogImage} />
             )}
             <h2 className={styles.blogAuthor}>Author: {data.author.username}</h2>
-            <p className={styles.blogContent}>{data.content}</p>
+            <div
+                className={styles.blogContent}
+                dangerouslySetInnerHTML={{__html: cleanContent}}
+            ></div>
             <p className={styles.blogViews}>Views: {data.views}</p>
             <p className={styles.blogCreatedAt}>Published on: {new Date(data.createdAt).toLocaleDateString()}</p>
             <h3 className={styles.blogComments}>Comments</h3>

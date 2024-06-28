@@ -43,7 +43,7 @@ main {
 
 .blogsImage {
     width: 100%;
-    max-height: 400px;
+    max-height: 150px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 20px;
