@@ -3,7 +3,6 @@ import html from '../../assets/icons/007-html 5.svg'
 import css from '../../assets/icons/004-css 3.svg'
 import js from '../../assets/icons/009-js.svg'
 import python from '../../assets/icons/015-python.svg'
-import ruby from '../../assets/icons/021-ruby.svg'
 import r from '../../assets/icons/r.svg'
 
 
