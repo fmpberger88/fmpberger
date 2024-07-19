@@ -6,7 +6,7 @@ import typeviewerImage from '../../assets/images/typ_viewer.webp';
 import calculator from '../../assets/images/calculaor.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
 import memoryCard from '../../assets/images/memorygame.webp';
-import library from '../../assets/images/Library.webp';
+import membersOnly from '../../assets/images/members_only.webp';
 import weather from '../../assets/images/weather.webp';
 import yelp from '../../assets/images/yelp.webp';
 import battleShip from '../../assets/images/BattleShip.webp';
@@ -41,8 +41,8 @@ export default function Projects() {
                 <ProjectImage imgSrc={elImage} altText="project el-info" aosDirection="fade-right" className="firstProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/eli-project" livePageUrl="https://www.el-info.ch/" className="firstDescription" />
 
-                <ProjectImage imgSrc={yelp} altText="food" aosDirection="fade-left" className="secondProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/restaurant-finder" livePageUrl="https://yelp-api-example.onrender.com/" className="secondDescription" />
+                <ProjectImage imgSrc={membersOnly} altText="members-only" aosDirection="fade-left" className="secondProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/members-only/tree/main" livePageUrl="https://members-only-x28j.onrender.com/" className="secondDescription" />
 
                 <ProjectImage imgSrc={weather} altText="weather-dahhboard" aosDirection="fade-right" className="thirdProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/weatherAPI" livePageUrl="https://weatherapi-kl20.onrender.com/" className="thirdDescription" />
@@ -68,8 +68,8 @@ export default function Projects() {
                 <ProjectImage imgSrc={memoryCard} altText="project memorycards" aosDirection="fade-left" className="tenthProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/memory-card-game" livePageUrl="https://memory-card-game-85of.onrender.com/" className="tenthDescription" />
 
-                <ProjectImage imgSrc={library} altText="project signup-form" aosDirection="fade-right" className="eleventhProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/library-odin" livePageUrl="https://library-odin.onrender.com/" className="eleventhDescription" />
+                <ProjectImage imgSrc={yelp} altText="food" aosDirection="fade-left" className="eleventhProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/restaurant-finder" livePageUrl="https://yelp-api-example.onrender.com/" className="eleventhDescription" />
             </div>
         </section>
     );
