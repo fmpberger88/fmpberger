@@ -3,7 +3,7 @@ import elImage from '../../assets/images/el-info.webp';
 import nikitaImage from '../../assets/images/nikita.webp';
 import trixImage from '../../assets/images/trix.webp';
 import typeviewerImage from '../../assets/images/typ_viewer.webp';
-import calculator from '../../assets/images/calculaor.webp';
+import boulderShop from '../../assets/images/bouldersShop.webp';
 import rockPaperScissors from '../../assets/images/rock_paper_scissors.webp';
 import memoryCard from '../../assets/images/memorygame.webp';
 import membersOnly from '../../assets/images/members_only.webp';
@@ -56,8 +56,8 @@ export default function Projects() {
                 <ProjectImage imgSrc={typeviewerImage} altText="project font viewer" aosDirection="fade-left" className="sixthProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/font-viewer" livePageUrl="https://font-viewer.onrender.com/" className="sixthDescription" />
 
-                <ProjectImage imgSrc={calculator} altText="project calculator" aosDirection="fade-right" className="seventhProject" />
-                <ProjectDescription githubUrl="https://github.com/fmpberger88/calculator" livePageUrl="https://calculator-3pfo.onrender.com/" className="seventhDescription" />
+                <ProjectImage imgSrc={boulderShop} altText="boulder's shop" aosDirection="fade-right" className="seventhProject" />
+                <ProjectDescription githubUrl="https://github.com/fmpberger88/potion-shop/tree/main" livePageUrl="https://potion-shop-ylgb.onrender.com/" className="seventhDescription" />
 
                 <ProjectImage imgSrc={rockPaperScissors} altText="project rock-paper-scissors" aosDirection="fade-left" className="eightProject" />
                 <ProjectDescription githubUrl="https://github.com/fmpberger88/rock-scissors-paper" livePageUrl="https://rock-scissors-paper-odin.onrender.com/" className="eigthDescription" />
