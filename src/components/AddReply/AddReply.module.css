@@ -1,21 +1,20 @@
-/* src/components/AddComment/AddComment.module.css */
-
-.addCommentContainer {
-    padding: 10px;
+.addReplyContainer {
+    margin-top: 30px;
     width: 70%;
+    align-self: center;
 }
 
-.addCommentForm {
+.addReplyForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 1.5rem;
-    height: 13rem;
+    height: 10rem;
 }
 
-.addCommentTextarea {
+.addReplyTextarea {
     padding: 10px;
     font-size: 1rem;
     margin-bottom: 10px;
@@ -25,7 +24,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .addCommentContainer {
+    .addReplyContainer {
         width: 100%;
     }
 }

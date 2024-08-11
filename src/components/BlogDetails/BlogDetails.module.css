@@ -1,58 +1,182 @@
-/* src/components/BlogDetail/BlogDetail.module.css */
-
-.blogDetailsContainer {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    width: 70%;
 }
 
+
 .blogTitle {
-    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
-    color: #666;
+    color: violet;
+}
+
+.author, .views {
+    font-weight: bold;
+}
+
+.published {
+    font-style: italic;
+    color: violet;
 }
 
 .blogImage {
     width: 100%;
-    max-height: 400px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
-.blogAuthor {
-    font-size: 1.2rem;
-    color: #999;
-    margin-bottom: 10px;
+.content {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
-.blogContent {
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.deleteButton {
+    background-color: darkred;
     font-size: 1rem;
-    color: #999;
-    margin-top: 8px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
 }
 
-.blogViews,
-.blogCreatedAt {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
+.deleteButton:hover {
+    background-color: #721c24;
 }
 
-.blogComments {
-    margin-top: 30px;
-}
-
-.comment {
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
-.commentText {
+.editButton {
+    background-color: orange;
     font-size: 1rem;
-    color: #999;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+.editButton:hover {
+    background-color: darkorange;
+    color: white;
+    text-decoration: none;
+}
+
+.commentsTitle {
+    color: violet;
+    border-top: 2px solid #213547;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.commentsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 3rem;
+    border: 2px solid #213547;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+
+}
+
+.commentsText {
+    font-size: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+    text-align: start;
+    padding: 1rem 0.25rem;
+    border-radius: 10px;
+}
+
+.repliesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    flex: 2;
+    margin-left: 2rem;
+}
+
+.replyCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #475E72;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: violet;
+}
+
+/* New styles for SEO, categories, and tags */
+.seoSection {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #213547;
+}
+
+.categorySection {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #213547;
+}
+
+.category {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #213547;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.tagSection {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #213547;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #213547;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin: 1rem 0.25rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .blogContainer {
+        width: 90%;
+    }
+    .blogImage {
+        width: 100%;
+    }
 }
