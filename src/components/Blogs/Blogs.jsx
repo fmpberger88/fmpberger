@@ -69,7 +69,7 @@ const Blogs = () => {
                             </div>
                             <div className={styles.likesContainer}>
                                 <FaHeart className={styles.heartIcon}/>
-                                <span className={styles.likesCount}>{blog.likes.length}</span>
+                                <span className={styles.likesCount}>{blog.likes?.length || 0}</span>
                             </div>
                         </div>
                     </div>
