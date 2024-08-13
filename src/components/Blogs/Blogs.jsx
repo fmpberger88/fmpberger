@@ -74,6 +74,8 @@ const Blogs = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div style={{display: "flex", justifyContent: "center"}}>
                 <Link to="/">
                     <StyledButton >Back</StyledButton>
                 </Link>
