@@ -1,12 +1,11 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import Root from './components/Root.jsx';
 import Blogs from "./components/Blogs/Blogs.jsx";
 import BlogDetails from "./components/BlogDetails/BlogDetails.jsx";
 import Login from "./components/Login/Login.jsx";
 import Register from "./components/Register/Register.jsx";
 
-
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <Root />,
@@ -20,14 +19,13 @@ const router = createBrowserRouter([
         element: <BlogDetails />
     },
     {
-        path: 'login',
+        path: '/login',
         element: <Login />
     },
     {
-        path: 'register',
+        path: '/register',
         element: <Register />
     }
-
 ]);
 
 export default router;
