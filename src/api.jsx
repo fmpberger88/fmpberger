@@ -16,6 +16,18 @@ axiosInstance.interceptors.request.use((config) => {
     return config;
 });
 
+axiosInstance.interceptors.response.use(
+    response => response,
+    error => {
+        if (error.response && error.response.status === 401) {
+            // If unauthorized, clear storage and redirect to login page
+            localStorage.clear();
+            window.location.href = '/login'; // Redirect to login page
+        }
+        return Promise.reject(error);
+    }
+);
+
 const handleError = (error) => {
     console.log(error)
     if (error.response) {
