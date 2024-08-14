@@ -22,7 +22,9 @@ axiosInstance.interceptors.response.use(
         if (error.response && error.response.status === 401) {
             // If unauthorized, clear storage and redirect to login page
             localStorage.clear();
-            window.location.href = '/login'; // Redirect to login page
+            setTimeout(() => {
+                window.location.href = '/#login'; // Redirect to login page
+            }, 3000)
         }
         return Promise.reject(error);
     }
