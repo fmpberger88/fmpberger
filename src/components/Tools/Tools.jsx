@@ -4,6 +4,7 @@ import css from '../../assets/icons/004-css 3.svg'
 import js from '../../assets/icons/009-js.svg'
 import python from '../../assets/icons/015-python.svg'
 import r from '../../assets/icons/r.svg'
+import { Link } from 'react-router-dom';
 
 
 export default function Tools() {
@@ -17,7 +18,13 @@ export default function Tools() {
     ]
 
     return (
-        <section>
+        <section id="tools">
+            {/* Back-Link oben */}
+            <div className={styles.backWrapper}>
+                <Link to="/" className={styles.backLink}>
+                    ← Back
+                </Link>
+            </div>
             <h2 className={styles.sectionTitle} id="tools">Tools</h2>
             <div className={styles.language}>
                 { languages.map(language => (

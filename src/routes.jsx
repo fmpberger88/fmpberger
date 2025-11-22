@@ -4,6 +4,9 @@ import Blogs from "./components/Blogs/Blogs.jsx";
 import BlogDetails from "./components/BlogDetails/BlogDetails.jsx";
 import Login from "./components/Login/Login.jsx";
 import Register from "./components/Register/Register.jsx";
+import Tools from "./components/Tools/Tools.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import ContactFormular from "./components/ContactFormular/ContactFormular.jsx";
 
 const router = createHashRouter([
     {
@@ -25,6 +28,18 @@ const router = createHashRouter([
     {
         path: '/register',
         element: <Register />
+    },
+    {
+        path: '/tools',
+        element: <Tools />
+    },
+    {
+        path: 'projects',
+        element: <Projects />
+    },
+    {
+        path: 'contact',
+        element: <ContactFormular />
     }
 ]);
 
