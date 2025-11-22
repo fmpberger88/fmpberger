@@ -13,6 +13,7 @@ import battleShip from '../../assets/images/BattleShip.webp';
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
 
 // ProjectDescription stays the same
 const ProjectDescription = ({ githubUrl, livePageUrl, className }) => (
@@ -36,6 +37,12 @@ export default function Projects() {
 
     return (
         <section>
+            {/* Back-Link oben */}
+            <div className={styles.backWrapper}>
+                <Link to="/" className={styles.backLink}>
+                    ← Back
+                </Link>
+            </div>
             <h2 className={styles.sectionTitle} id="projects">Projects</h2>
             <div className={styles.gridContainer}>
                 <ProjectImage imgSrc={elImage} altText="project el-info" aosDirection="fade-right" className="firstProject" />
